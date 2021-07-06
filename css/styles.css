@@ -44,7 +44,9 @@ button{
     color: #bebebe;
     text-transform: uppercase;
     letter-spacing: 1px;
-
+	
+    width: 190px;
+    height: 64px;
     padding: 20px 50px;
     margin: 8px 14px 8px 14px;
     position: relative;
