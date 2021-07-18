@@ -130,8 +130,10 @@ small{
 footer{
     margin-top: -20px;
 }
-a.media, a.media:visited, a.media:active{
+a{
     text-decoration: none!important;
+}
+a.media, a.media:visited, a.media:active{
     color:#1DA1F2;
     cursor: pointer;
 }
@@ -139,7 +141,6 @@ a.media:hover{
     color:#3b39af;
 }
 a, a:visited, a:active{
-    text-decoration: none!important;
     color: #bebebe;
     cursor: pointer;
 }
