@@ -136,7 +136,7 @@ a.media, a.media:visited, a.media:active{
     cursor: pointer;
 }
 a.media:hover{
-    color:#7fbde4;
+    color:#3b39af;
 }
 a, a:visited, a:active{
     text-decoration: none;
