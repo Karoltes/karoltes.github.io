@@ -130,12 +130,15 @@ small{
 footer{
     margin-top: -20px;
 }
-a, a:visited, a:active{
+a.media, a.media:visited, a.media:active{
     text-decoration: none;
     color:#1DA1F2;
     cursor: pointer;
 }
-a.project, a.project:visited, a.project:active{
+a.media:hover{
+    color:#7fbde4;
+}
+a, a:visited, a:active{
     text-decoration: none;
     color: #bebebe;
     cursor: pointer;
