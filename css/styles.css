@@ -135,3 +135,8 @@ a, a:visited, a:active{
     color:#1DA1F2;
     cursor: pointer;
 }
+a.project, a.project:visited, a.project:active{
+    text-decoration: none;
+    color: #bebebe;
+    cursor: pointer;
+}

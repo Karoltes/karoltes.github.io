@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock & Paper & Scissors</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <p class="title">Rock Paper Scissors</p>
+    <p>Pick a item to play</p>
+    <div>
+        <img class="pick" src="https://static.thenounproject.com/png/477919-200.png" onclick="Roll('s');">
+        <img class="pick" src="https://static.thenounproject.com/png/477918-200.png" onclick="Roll('r');">
+        <img class="pick" src="https://static.thenounproject.com/png/477922-200.png" onclick="Roll('p');">
+    </div>
+    <div class="game">
+        <p>Your choice</p>
+        <img id="player">
+        <p id="p_score">0</p>
+    </div>
+    <div class="game">
+        <p>Enemy's choice</p>
+        <img id="enemy">
+        <p id="e_score">0</p>
+    </div>
+    
+    <p id="result"></p>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
