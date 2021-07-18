@@ -4,29 +4,38 @@
 <head>
     <title>Rock & Paper & Scissors</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="karoltes.github.io/css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <p class="title">Rock Paper Scissors</p>
     <p>Pick a item to play</p>
-    <div>
+    <div class="col-sm-12">
         <img class="pick" src="https://static.thenounproject.com/png/477919-200.png" onclick="Roll('s');">
         <img class="pick" src="https://static.thenounproject.com/png/477918-200.png" onclick="Roll('r');">
         <img class="pick" src="https://static.thenounproject.com/png/477922-200.png" onclick="Roll('p');">
     </div>
-    <div class="game">
+    <div class="game col-sm-6">
         <p>Your choice</p>
         <img id="player">
         <p id="p_score">0</p>
     </div>
-    <div class="game">
+    <div class="game col-sm-6">
         <p>Enemy's choice</p>
         <img id="enemy">
         <p id="e_score">0</p>
     </div>
     
     <p id="result"></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="karoltes.github.io/js/bootstrap.min.js"></script>
     <script src="js/game.js"></script>
 </body>
 
