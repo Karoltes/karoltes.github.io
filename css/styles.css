@@ -131,7 +131,7 @@ footer{
     margin-top: -20px;
 }
 a.media, a.media:visited, a.media:active{
-    text-decoration: none;
+    text-decoration: none!important;
     color:#1DA1F2;
     cursor: pointer;
 }
@@ -139,7 +139,7 @@ a.media:hover{
     color:#3b39af;
 }
 a, a:visited, a:active{
-    text-decoration: none;
+    text-decoration: none!important;
     color: #bebebe;
     cursor: pointer;
 }
