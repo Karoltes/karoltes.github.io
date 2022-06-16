@@ -1,200 +1,222 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Karoltes - UI Developer</title>
-    <meta name="description" content="Karoltes UI Developer - personal page">
-    <meta name="keywords" content="Developer, Software, Engineer, Karoltes, Karol, HTML, CSS, JavaScript", Web, Frontend, UI>
-    <meta name="author" content="Karoltes">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/flag-icons.min.css">
+    <title>CAD Online Store</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="js/index.js"></script>
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="navbar-menu">
-            <div class="navtab">
-                <div class="logo">
-                    <div class="logo-img">
-                        <div class="logo-text">
-                            <span class="name">Karoltes</span>
-                            <span class="proff">UI Developer</span>
-                        </div>
-                    </div>
-                    <div class="navicon"><i class="fa fa-code logoicon"></i></div>
-                </div>
+    <div class="header">
+        <div class="title">CAD Online Store</div>
+    </div>
+    <div class="text-desc">
+        <p class="text-base">
+            Typowy współczesny rower klasyczny jest jednośladem dwukołowym. Ramy roweru wykonuje się ze stali zwykłych
+            lub stopowych, stopów aluminium lub kompozytów. Układ jezdny roweru to koła (zwykle) szprychowe i ogumienie
+            pneumatyczne. Napęd jest przekazywany przez układ napędowy roweru, którym przeważnie jest przekładnia
+            łańcuchowa i system zmiany przełożeń (przerzutka zewnętrzna, przerzucającą łańcuch na koła łańcuchowe o
+            różnych ilościach zębów lub wewnętrzna, znajdującą się w piaście). Bywają również modele z napędem
+            przekazywanym wałkiem. Hamulce: mogą być nożne, działające przy kręceniu pedałami w tył (tzw. torpedo lub
+            hamulce zintegrowane z przerzutką wewnętrzną). Najpopularniejsze są jednak działające na obręcz mechaniczne
+            (cięgnowe) lub (rzadziej) hydrauliczne, hamulce ręczne (hamulce szczękowe, hamulce V-brake). Coraz
+            popularniejsze w rowerach są hamulce tarczowe. Obecnie często (oprócz rowerów szosowych) stosuje się w
+            rowerach amortyzację obu kół (przedniego, jak i tylnego).
+        </p>
+        <p class="text-show">
+            W badaniu z 2011 r. przeprowadzonym przez Europejską Federację Rowerową (European Cycling Federation)
+            porównano średnie emisje rowerów zwykłych i elektrycznych z innymi środkami transportu, biorąc przy tym pod
+            uwagę środowiskowy koszt ich produkcji oraz użytkowania. W przypadku rowerów uwzględniono też dodatkowy
+            wydatek energetyczny samych użytkowników w postaci spalonych kalorii. Według obliczeń emisja na każdy
+            kilometr pokonany zwykłym rowerem wynosi 21 gramów CO2, a rowerem elektrycznym 1 gram więcej. W przypadku
+            samochodów wynik to 271 gramów na kilometr na osobę oraz 101 gramów na kilometr na pasażera autobusów
+        </p>
+        <button type="submit" onclick="showMore(this)" class="btn btn-secondary button-show">Pokaż więcej</button>
+    </div>
+    <div class="product-list">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/bike.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Bike MountWalker-23</h5>
+                <p class="card-text">Rower górski klasy MountWalker, numer jakościowy 23. Polecany podróżnikom.
+                    card's content.</p>
+                <a href="https://allegro.pl/oferta/rower-gravel-romet-finale-r-58cm-12255357070?bi_s=landing_internal&bi_c=markowe-rowery&bi_m=offers-list&"
+                    class="btn btn-primary">Details</a>
             </div>
-            <div class="navtab" onclick="changeContent(1)">
-                <div class="navitem">
-                    <div class="navicon"><i class="fa fa-user"></i></div>
-                    <div class="navlink">About me</div>
-                </div>
-            </div>
-            <div class="navtab" onclick="changeContent(2)">
-                <div class="navitem">
-                    <div class="navicon"><i class="fa fa-desktop"></i></div>
-                    <div class="navlink">Skills</div>
-                </div>
-            </div>
-            <div class="navtab" onclick="changeContent(3)">
-                <div class="navitem">
-                    <div class="navicon"><i class="fa fa-book"></i></div>
-                    <div class="navlink">Languages</div>
-                </div>
-            </div>
-            <a class="navtab" href="http://www.github.com/karoltes" target="_blank">
-                <div class="navitem">
-                    <div class="navicon"><i class="fa fa-github"></i></div>
-                    <div class="navlink">Github</div>
-                </div>
-            </a>
-            <a class="navtab" href="http://www.twitter.com/karoltes" target="_blank">
-                <div class="navitem">
-                    <div class="navicon"><i class="fa fa-twitter"></i></div>
-                    <div class="navlink">Twitter</div>
-                </div>
-            </a>
-            <div class="navtab">
-                <div class="navitem">
-                    <div class="navicon"><i class="fa fa-cog"></i></div>
-                    <div class="navlink">Settings</div>
-                </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/bike2.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Bike CityKid-99</h5>
+                <p class="card-text">Rower miejski klasy CityKid, numer jakościowy 99. Polecany do podróżowania po
+                    mieście.
+                    card's content.</p>
+                <a href="https://allegro.pl/oferta/rower-kross-trans-2-0-damski-czarny-m-17-11250507305?bi_s=landing_internal&bi_c=markowe-rowery&bi_m=offers-list&"
+                    class="btn btn-primary">Details</a>
             </div>
         </div>
     </div>
-    <div class="main">
-        <div class="content">
-            <div class="title">About me</div>
-            <div class="subtitle">IT Student • Programmer • Software Developer • Data Analyst • Geek</div>
-            <div class="text">
-                Young Computer Science and Econometrics student.
-                Interested in data science and programming. Loves technology,
-                creative coding and computer games. Analytical skills and open mind for new knowledge.
-            </div>
-            <div class="text">
-                Residency: Poland <span class="flag fi fi-pl"></span>
-            </div>
-        </div>
-        <div class="content">
-            <div class="title">Skills</div>
-            <div class="text">
-                Programming is my passion and way of living. During my learning path I learnt many programming languages and other developer's skills.
-            </div>
-            <div class="text">
-                <div class="lang-list">
-                    <div class="lang-group">
-                        <div class="subtitle">Very good knowledge</div>
-                        <div class="group very-good">
-                            <div class="tag">
-                                <i class="devicon-html5-plain colored"></i> HTML
-                            </div>
-                            <div class="tag">
-                                <i class="devicon-css3-plain colored"></i> CSS
-                            </div>
-                            <div class="tag">
-                                <i class="devicon-javascript-plain colored"></i> Javascript
-                            </div>
-                            <div class="tag">
-                                <i class="devicon-windows8-original colored"></i> Microsoft Office
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lang-group">
-                        <div class="subtitle">Good knowledge</div>
-                        <div class="group good">
-                            <div class="tag">
-                                <i class="devicon-cplusplus-plain colored"></i> C++
-                            </div>
-                            <div class="tag">
-                                <i class="devicon-python-plain colored"></i> Python
-                            </div>
-                            <div class="tag">
-                                <i class="devicon-angularjs-plain colored"></i> Angular
-                            </div>
-                            <div class="tag">
-                                <i class="devicon-java-plain colored"></i> Java
-                            </div>
-                            <div class="tag">
-                                <i class="fa fa-database"></i> SQL
-                            </div>
-                            <div class="tag">
-                                <i class="devicon-sass-original colored"></i> SCSS
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lang-group">
-                        <div class="subtitle">Average knowledge</div>
-                        <div class="group average">
-                            <div class="tag">
-                                <i class="devicon-rstudio-plain colored"></i> R
-                            </div>
-                            <div class="tag">
-                                <i class="devicon-csharp-plain colored"></i> C#
-                            </div>
-                            <div class="tag">
-                                <i class="devicon-typescript-plain colored"></i> Typescript
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lang-group">
-                        <div class="subtitle">Basic knowledge</div>
-                        <div class="group basic">
-                            <div class="tag">
-                                <i class="devicon-php-plain colored"></i> PHP
-                            </div>
-                            <div class="tag">
-                                <i class="devicon-gimp-plain colored"></i> Gimp
-                            </div>
-                            <div class="tag">
-                                <i class="devicon-inkscape-plain colored"></i> Inkscape
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="title">Languages</div>
-            <div class="text">
-                List of languages I use.
-            </div>
-            <div class="text">
-                <div class="my-lang">
-                    <div class="lang">
-                        <div class="flag-block">
-                            <span class="big-flag fi fi-pl"></span>
-                        </div>
-                        <span class="lang-name">Polish</span>
-                        <span class="lang-level">Native</span>
-                    </div>
-                    <div class="lang">
-                        <div class="flag-block">
-                            <span class="big-flag fi fi-gb"></span>
-                        </div>
-                        <span class="lang-name">English</span>
-                        <span class="lang-level">Advanced (B2)</span>
-                    </div>
-                    <div class="lang">
-                        <div class="flag-block">
-                            <span class="big-flag fi fi-de"></span>
-                        </div>
-                        <span class="lang-name">German</span>
-                        <span class="lang-level">Basic</span>
-                    </div>
-                    <div class="lang">
-                        <div class="flag-block">
-                            <span class="big-flag fi fi-is"></span>
-                        </div>
-                        <span class="lang-name">Icelandic</span>
-                        <span class="lang-level">Basic</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="text-desc">
+        <p class="text-base">
+            W Grazu zapytano właścicieli sklepów, ilu ich zdaniem z ich klientów przyjeżdża autem. Sklepikarze
+            oszacowali procent takich klientów na 58%, lecz kierowców było o połowę mniej[28]. Podobne wyniki uzyskano w
+            badaniach w Bristolu, Vancouver i Toronto, w Portland i w Szczecinie[29].
+
+            Badania realizowane między innymi w Kopenhadze wykazały, że choć klienci na rowerach kupują mniej podczas
+            jednej wizyty, to zaglądają do sklepu częściej, więc w ogólnym rozrachunku wydają więcej niż ci
+            zmotoryzowani[30]. W 2013 r. nowojorski Departament Transportu zamówił cykl analiz wpływu wybranych nowych
+            dróg dla rowerów na firmy. Badacze ustalili, że 3 lata po wytyczeniu pasów rowerowych na Dziewiątej Alei na
+            Manhattanie dochody przedsiębiorstw zlokalizowanych wzdłuż tej ulicy urosły o 49%, podczas gdy zyski firm
+            przy trzech podobnych ulicach, przy których pasy dla rowerów nie powstały, poszły w górę zaledwie o 26%.
+            Podobnie na Brooklynie, gdzie sprzedaż w dzielnicy wzrosła średnio o 60%, ale wzdłuż drogi dla rowerów na
+            Vanderbilt Avenue się podwoiła. „Wynika stąd, że stworzenie bezpieczniejszej, bardziej przyjaznej i
+            zrównoważonej infrastruktury ulicznej rzadko szkodzi lokalnym przedsiębiorcom, a w przeważającej większości
+            przypadków jest dla nich błogosławieństwem” – podsumowanie raportu[31].
+
+            W 1891 r. pierwszą w Polsce fabrykę rowerów założył Władysław Sierpiński. Polska Fabryka Rowerów i Motocykli
+            Wicher, zlokalizowana była w Łodzi przy ul. Kilińskiego 96a[50]. Produkowała kilkaset rowerów rocznie, gdyż
+            właściciel nie zdecydował się na masową produkcję. Zaś warszawska firma Ormonde Kazimierza Lipieńskiego,
+            założona rok wcześniej niż manufaktura Sierpińskiego, jedynie sprowadzała rowery z zagranicy aż do 1905 r.,
+            wówczas Lipieński zdecydował się na wyprodukowanie własnych modeli. W 1886 r. powstało Warszawskie
+            Towarzystwo Cyklistów. Przed II wojną światową w Polsce działało kilka firm zajmujących się produkcją
+            rowerów, części do nich były zarówno produkowane w Polsce, jak i sprowadzane z Wielkiej Brytanii lub
+            Niemiec. Można wymienić trzy najważniejsze firmy w Warszawie – Adama Kamińskiego, Antoniego Rybowskiego i
+            Franciszka Zawadzkiego, a także Fabryka Broni „Łucznik” w Radomiu. Każde większe miasto miało co najmniej
+            jedną firmę rowerową. Ramy zazwyczaj produkowano na miejscu, a części sprowadzano.
+
+            Po wojnie większość zakładów przestała istnieć, a produkcja krajowa ograniczała się do zakładów państwowych
+            Romet.
+
+            Według badań CBOS z 2012 roku w Polsce 70 procent Polaków jeździ na rowerach[51].
+
+            W Odense ponad 81% dzieci dociera do szkoły na rowerze, a miasto stawia sobie za cel, by każde dziecko w
+            wieku 6 lat mogło samodzielnie dotrzeć do szkoły na rowerze[66]. Dla porównania w Wielkiej Brytanii zaledwie
+            od 2 do 3%, a w Warszawie 6% uczniów dojeżdża do szkoły rowerem[66]. W Stanach Zjednoczonych, według
+            National Center for Safe Routes to School, nawet wśród uczniów mieszkających w promieniu od jednej do dwóch
+            mil od szkoły (1,6– 3,2 kilometrów), czyli niewiele ponad kwadrans jazdy rowerem, zaledwie 2% wybiera rower.
+            Mniej więcej połowę rodzice dowożą samochodami[66][67].
+
+            Wraz ze wzrostem zamożności brytyjskiego społeczeństwa odsetek uczniów posiadających rowery podniósł się z
+            dwóch trzecich do 90%. W 1971 r. blisko 70% dzieci rodzice pozwalali jeździć rowerem po ulicy, w 1990 r. ta
+            liczba spadła do 25%[68]. Znacznie mniej dzieci mogło poruszać się pieszo bez opieki, zwłaszcza w drodze do
+            szkoły[69].
+
+            W 1969 r. prawie 90% amerykańskich dzieci, które mieszkały w odległości jednej mili od szkoły (ok. 1,6
+            kilometra), docierało tam pieszo lub na rowerze. W 1999 r. ten odsetek spadł do 30%. 75% spadek liczby
+            nieletnich ofiar wypadków z udziałem pieszych był okupiony zmniejszeniem się liczby dzieci chodzących pieszo
+            do szkoły o 67%[70].
+
+            Alison Carver prowadziła rozmaite badania nad ograniczaniem mobilności dzieci w Wielkiej Brytanii i
+            Australii. W artykule z 2013 r. napisała, że dzieciom, które samodzielnie chodzą lub jeżdżą rowerem do
+            szkoły, rodzice dają dużo więcej wolności do poruszania się po okolicy w życiu pozaszkolnym[71]. Ustaliła
+            też, że w przypadku dzieci, które w promieniu 5 kilometrów od szkoły mają bardziej rozbudowaną
+            infrastrukturę rowerową, prawdopodobieństwo, że będą jeździć do szkoły rowerem, jest prawie 2 razy wyższe
+            niż u pozostałych[72]. Rower to znakomity sposób na zwiększenie aktywności fizycznej nastolatek, bo
+            dziewczęta w tym wieku niechętnie biorą udział w sportowej rywalizacji[73]
+        </p>
     </div>
-        <script src="js/index.js"></script>
+    <div class="text-desc">
+        <p class="text-base">
+            Wiele naukowych opracowań dowodzi, że ludzie regularnie jeżdżący na rowerze mają mniejsze skłonności do
+            otyłości, cukrzycy, udarów, chorób serca i różnych rodzajów raka[11]. Rowerzyści nie tylko zyskują kilka lat
+            życia, ale mają też większe szanse pozostać mobilnymi i niezależnymi w podeszłym wieku czy uniknąć
+            demencji[11]. U ludzi, którzy jeździli do pracy rowerem, istnieje o 40% mniejsze ryzyko zgonu w czasie 15
+            lat badania niż pozostałych[11]. Kolarstwo znacznie poprawia kondycję układu sercowo-naczyniowego[11].
+            Szpital Northern General Hospital w Sheffield przeprowadził badanie w trakcie którego zbadano sprawozdania z
+            sekcji zwłok 32 osób, które regularnie jeździły na rowerze i zmarły w różnych okolicznościach. Porównano ich
+            serca z organami innych zmarłych tym samym wieku i tej samej płci. Okazało się, że w grupie poruszającej się
+            na rowerach znacznie rzadziej dochodziło do zaczopowania tętnic i obstrukcji naczyń wieńcowych[11][12].
+
+            Inne badanie, opublikowane w 2016 r. przez Uniwersytet Południowej Danii, wykazało, że jazda na rowerze
+            nawet w stosunkowo małym wymiarze czasu może znacząco zmniejszyć ryzyko wystąpienia schorzeń serca. Naukowcy
+            przez 20 lat monitorowali 50 000 osób w wieku od 50 do 65 lat. Ci, którzy jeździli rowerem przynajmniej
+            dziewięćdziesiąt minut tygodniowo, byli o 24% mniej narażeni na dusznicę bolesną i zawał serca w danym
+            czasie. Przy jeździe rowerem zaledwie pół godziny tygodniowo ryzyko spadało o 16%[13][14].
+
+            W 2000 r. ten sam uniwersytet zbadał efekty dojeżdżania rowerem do miejsca pracy lub nauki. Badacze
+            przyglądali się życiu 30 000 mieszkańców Kopenhagi w różnym wieku średnio przez okres 15 lat. W trakcie
+            trwania projektu zmarło 6000 osób. Okazało się, że u ludzi jeżdżących do pracy rowerem ryzyko, że umrą w
+            trakcie okresu badania, było o 40% niższe (nawet po wzięciu pod uwagę wpływu czynników typu poziom
+            aktywności sportowej niezwiązanej z transportem)[14][15].
+
+            Adrian Davis powiedział: „Ludzie, którzy mówią, że jeżdżenie rowerem jest niebezpieczne, nie mają racji –
+            mówi. Zabije nas siedzenie w miejscu, co większości społeczeństwa zdarza się zdecydowanie za często”[11].
+
+            Co roku na rowerach ginie niewiele ponad setka Brytyjczyków (w Polsce w 2017 roku zginęło 220 rowerzystów,
+            liczba ta spadła o ponad połowę w ciągu dekady)[11][16], w tym samym czasie 85000 innych osób umrze z powodu
+            chorób wywołanych brakiem aktywności fizycznej, przede wszystkim na choroby serca i raka[11][17]. Siedzący
+            tryb życia jest drugim albo czwartym najważniejszym czynnikiem ryzyka przedwczesnej śmierci[11]. Niewiele
+            dalej plasuje się otyłość, którą brak ruchu pogłębia[11]. W 2010 r. badacze przestudiowali kilkadziesiąt
+            opracowań, żeby policzyć, co by się stało, gdyby z dnia na dzień 500 000 osób przesiadło się z samochodu na
+            rower. W Holandii średnio korzyści przewyższały zagrożenia mniej więcej dziewięciokrotnie, a w starszych
+            grupach wiekowych ten współczynnik rósł jeszcze bardziej. W Wielkiej Brytanii korzyści związane z większą
+            długością życia były siedmiokrotnie wyższe niż zagrożenia[11][18].
+
+            Jak wykazało badanie z 2013 r. przeprowadzone w Australii, seniorzy, którzy regularnie jeżdżą na rowerze,
+            mają dużo mocniejsze mięśnie nóg i lepiej rozwinięty zmysł równowagi, co zmniejsza ryzyko groźnego
+            upadku[19].
+
+            W 2014 r. Ben Barratt zmierzył, na jaki poziom czarnego węgla, substancji zawartej w spalinach z silników
+            diesla, narażeni są kierowca karetki, kurier rowerowy, małe dziecko, emeryt, pracownik biurowy i uczeń.
+            Każdego uczestnika wyposażył w przyrząd pomiarowy i czujnik GPS. Po 24 godzinach okazało się, że u kuriera
+            rowerowego wynik był drugi od końca. Zdaniem Barratta przyczyną mógł być pęd powietrza rozwiewający spaliny,
+            które wewnątrz samochodu się kumulują (odczyt u kierowcy karetki był najwyższy). W zakorkowanych miastach
+            rower jest szybszy i umożliwia jazdę mniejszymi uliczkami, co dodatkowo zmniejsza ekspozycję na spaliny.
+            Zdaniem Audrey de Nazelle istnieje też czynnik, który niweluje ten efekt – na rowerze najczęściej oddychamy
+            głębiej, więc do naszego organizmu dostaje się proporcjonalnie więcej szkodliwych substancji. Przyspieszony
+            oddech oznacza, że globalnie rowerzyści wdychają więcej zanieczyszczeń niż kierowcy[20].
+        </p>
+    </div>
+    <div class="block">
+        <iframe class="video" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="400" height="240"
+            type="text/html"
+            src="https://www.youtube.com/embed/-DBqtbqA7xk?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
+    </div>
+    <div class="text-desc">
+        <p class="text-base">
+            W Wielkiej Brytanii na kobiety i dziewczynki przypada 29% przejazdów odbywanych na rowerze[21]. W Warszawie
+            34,8%, w Stanach Zjednoczonych 24%, a w Australii 21%[22].
+
+            W Danii i Holandii kobiety stanowią odpowiednio 55 oraz 56% rowerzystów[22]. Jest możliwe, że równy udział
+            obu płci w ruchu rowerowym jest powiązany z dobrą infrastrukturą. Badanie przeprowadzone w Nowym Jorku
+            wykazało, że na Piątej Alei, gdzie znajduje się wydzielona droga dla rowerów, udział kobiet wynosił 20%. Na
+            równoległej Szóstej Alei, gdzie nie ma infrastruktury rowerowej, 10%[23]. W publikacji Lady Cyclist z 1895
+            r. angielska pisarka Louise Jeye pisała o wolności jaką daje rower: „To nowa era, nowa era emancypacji, a
+            przyniósł ją rower. Nieskrępowane obecnością przyzwoitki lub co gorsza męskiego adoratora młode dziewczyny
+            naszych czasów cieszą się wolnością pedałowania i jazdą wśród pięknych krajobrazów. Mogą poczuć prawdziwą
+            niezależność, a ponadto, poprawiając swoją kondycję fizyczną, dbają też o umysł”[24].
+
+            Steve Jones określił kiedyś rower mianem najważniejszego wynalazku przeciwdziałającego zaburzeniom
+            genetycznym[22]. Dzięki rowerom ludzie szukający partnerów w pobliskich miejscowościach, mogli teraz
+            wybierać ze znacznie większej grupy osób[22][25].
+
+            W 2011 r. Transport for London wykazał, że typowymi rowerzystami w Londynie byli najczęściej biali mężczyźni
+            przed 40 r. ż., o zarobkach od średniego do wysokiego[26]. Według kolejnego badania przeprowadzonego w 2016
+            r., już po budowie kilku tras rowerowych, czarnoskórzy oraz mieszkańcy należący do mniejszości etnicznych
+            zaczęli równie często regularnie podróżować rowerem co biali[27].
+        </p>
+    </div>
+    <form>
+        <div class="form-title">
+            Formularz kontaktowy
+        </div>
+        <div class="form-group">
+            <label for="nameInput">Imię i nazwisko</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Wpisz imię i nazwisko">
+        </div>
+        <div class="form-group">
+            <label for="emailInput">E-mail</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="Wpisz adres e-mail">
+        </div>
+        <div class="form-group">
+            <label for="messageInput">Wiadomość</label>
+            <textarea rows="3" class="form-control" id="messageInput" placeholder="Wpisz treść wiadomości"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Wyślij</button>
+    </form>
 </body>
 
 </html>
